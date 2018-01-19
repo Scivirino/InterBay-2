@@ -92,12 +92,14 @@ h1.alert, h2.alert		{color: #000000;}
 .tajaran_signlang		{color: #941C1C;}
 .skrell					{color: #00CED1;}
 .soghun					{color: #228B22;}
-.solcom					{color: #22228B;}
+.solcom					{color: #665018;}
+/* from back when it was solcom instead of Chinese {color: #22228B;} */
 .changeling				{color: #800080;}
 .vox					{color: #AA00AA;}
 .rough					{font-family: "Trebuchet MS", cursive, sans-serif;}
 .say_quote				{font-family: Georgia, Verdana, sans-serif;}
 .terran					{color: #9C250B;}
+.brazilian				{color: #205020;}
 
 .interface				{color: #330033;}
 
