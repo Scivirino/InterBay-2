@@ -32,7 +32,7 @@
 /mob/living/silicon/New()
 	silicon_mob_list |= src
 	..()
-	add_language(LANGUAGE_GALCOM)
+	add_language(LANGUAGE_ENGLISH)
 	init_id()
 	init_subsystems()
 
