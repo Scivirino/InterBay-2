@@ -24,7 +24,7 @@
 	desc = "A common trade language back on earth and the official language of WOH- Of course, not the queen's english, but..."
 	speech_verb = "says"
 	whisper_verb = "whispers"
-	key = "0"
+	key = "e"
 	flags = RESTRICTED
 	syllables = list("al", "an", "ar", "as", "at", "ea", "ed", "en", "er", "es", "ha", "he", "hi", "in", "is", "it",
 "le", "me", "nd", "ne", "ng", "nt", "on", "or", "ou", "re", "se", "st", "te", "th", "ti", "to",
@@ -34,8 +34,8 @@
 /datum/language/common/space
 	name = LANGUAGE_GALCOM
 	desc = "The common galactic tongue."
-	key = "g"
-	flags = RESTRICTED
+	key = "0"
+	flags = WHITELISTED
 	syllables = list("blah","blah","blah","bleh","meh","neh","nah","wah")
 
 //TODO flag certain languages to use the mob-type specific say_quote and then get rid of these.
