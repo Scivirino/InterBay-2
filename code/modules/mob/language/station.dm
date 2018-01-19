@@ -170,20 +170,38 @@
 /datum/language/slavic
 	name = LANGUAGE_SLAVYA
 	desc = "The Language of Eastern Europe and Northern Asia, peeendosi."
-	speech_verb = "speaks"
+	speech_verb = "says"
+	whisper_verb = "whispers"
 	colour = "terran"
 	key = "r"
 	syllables = list("rus","zem","ave","groz","ski","ska","ven","konst","pol","lin","svy",
 	"danya","da","mied","zan","das","krem","muka","suka","blyat","to","st","no","na","ni",
 	"ko","ne","en","po","ra","li","on","byl","cto","eni","ost","ol","ego","ver","stv","pro")
-	
+
+/datum/language/slavic/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
+
 /datum/language/americo
 	name = LANGUAGE_AMERICO
 	desc = "The language of South America, except the parts that don't matter. There are also some Europeans who speak it, but they claim that everyone else pronounces everything wrong."
-	speech_verb = "speaks"
+	speech_verb = "says"
+	whisper_verb = "whispers"
 	colour = "brazilian"
 	key = "p"
 	syllables = list("to","fa","pa","ta","sja","ca","ro","ra","za","guel","hom","rar","co",
 	"me","bra","zil","sao","pao","lao","vee","cai","pee","re","ve","va","sal","dor","lin",
 	"do","pen","dao","da","ez","per","sa","ao","guz","to","pat","ria","noz","traz","ce",
 	"be","zo","am","a","terr","pur","i","si","mo","az","ul","sul","de","ver")
+
+/datum/language/americo/get_spoken_verb(var/msg_end)
+	switch(msg_end)
+		if("!")
+			return pick("exclaims","shouts","yells") //TODO: make the basic proc handle lists of verbs.
+		if("?")
+			return ask_verb
+	return speech_verb
