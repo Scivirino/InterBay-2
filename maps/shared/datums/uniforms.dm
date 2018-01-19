@@ -1,3 +1,4 @@
+/* OLD MAGISTRATE
 /decl/hierarchy/outfit/job/dreyfus/magistrate
 	name = OUTFIT_JOB_NAME("Magistrate")
 	l_ear = /obj/item/device/radio/headset/heads/captain
@@ -8,6 +9,21 @@
 	gloves = /obj/item/clothing/gloves/white
 	head = /obj/item/clothing/head/crown//FIT FOR A FUCKING KING
 	suit = /obj/item/clothing/suit/robes
+*/
+
+
+/decl/hierarchy/outfit/job/dreyfus/governor
+	name = OUTFIT_JOB_NAME("Governor")
+	head = /obj/item/clothing/head/caphat/formal
+	l_ear = /obj/item/device/radio/headset/heads/captain
+	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/nt
+	suit = /obj/item/clothing/suit/leathercoat
+	shoes = /obj/item/clothing/shoes/dress
+	glasses = /obj/item/clothing/glasses/sunglasses/big
+	l_hand = /obj/item/weapon/storage/briefcase
+	id_type = /obj/item/weapon/card/id/dreyfus/gold
+	pda_type = /obj/item/device/pda/captain
+	gloves = /obj/item/clothing/gloves/white
 
 /decl/hierarchy/outfit/job/dreyfus/adjoint
 	name = OUTFIT_JOB_NAME("Directeur Adjoint")

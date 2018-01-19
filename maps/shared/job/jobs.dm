@@ -109,6 +109,7 @@
 	minimal_player_age = 41
 	economic_modifier = 10
 	ideal_character_age = 65
+	outfit_type = /decl/hierarchy/outfit/job/dreyfus/governor
 	social_class = SOCIAL_CLASS_MAX
 
 	equip(var/mob/living/carbon/human/H)

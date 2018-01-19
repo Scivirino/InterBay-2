@@ -30,7 +30,7 @@
 	icon_state = "capcap"
 
 /obj/item/clothing/head/caphat/formal
-	name = "parade hat"
+	name = "Governor's Cap"
 	desc = "No one in a commanding position should be without a perfect, white hat of ultimate authority."
 	icon_state = "officercap"
 
