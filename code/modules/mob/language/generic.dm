@@ -20,11 +20,21 @@
 
 // 'basic' language; spoken by default.
 /datum/language/common
-	name = LANGUAGE_GALCOM
-	desc = "The common galactic tongue."
+	name = LANGUAGE_ENGLISH
+	desc = "A common trade language back on earth and the official language of WOH- Of course, not the queen's english, but..."
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	key = "0"
+	flags = RESTRICTED
+	syllables = list("al", "an", "ar", "as", "at", "ea", "ed", "en", "er", "es", "ha", "he", "hi", "in", "is", "it",
+"le", "me", "nd", "ne", "ng", "nt", "on", "or", "ou", "re", "se", "st", "te", "th", "ti", "to",
+"ve", "wa", "all", "and", "are", "but", "ent", "era", "ere", "eve", "for", "had", "hat", "hen", "her", "hin",
+"his", "ing", "ion", "ith", "not", "ome", "oul", "our", "sho", "ted", "ter", "tha", "the", "thi")
+
+/datum/language/common/space
+	name = LANGUAGE_GALCOM
+	desc = "The common galactic tongue."
+	key = "g"
 	flags = RESTRICTED
 	syllables = list("blah","blah","blah","bleh","meh","neh","nah","wah")
 
@@ -44,6 +54,7 @@
 	speech_verb = "enunciates"
 	colour = "say_quote"
 	key = "2"
+	flags = RESTRICTED
 	space_chance = 100
 	syllables = list("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit",
 					 "sed", "do", "eiusmod", "tempor", "incididunt", "ut", "labore", "et", "dolore",
@@ -61,6 +72,7 @@
 	speech_verb = "growls"
 	colour = "rough"
 	key = "3"
+	flags = RESTRICTED
 	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
 
 /datum/language/sign
