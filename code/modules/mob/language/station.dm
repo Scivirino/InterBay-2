@@ -80,7 +80,7 @@
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	colour = "solcom"
-	key = "1"
+	key = "c"
 	//flags = WHITELISTED
 
 	//syllables are at the bottom of the file
@@ -182,7 +182,7 @@
 	desc = "The language of South America, except the parts that don't matter. There are also some Europeans who speak it, but they claim that everyone else pronounces everything wrong."
 	speech_verb = "speaks"
 	colour = "brazilian"
-	key = "b"
+	key = "p"
 	syllables = list("to","fa","pa","ta","sja","ca","ro","ra","za","guel","hom","rar","co",
 	"me","bra","zil","sao","pao","lao","vee","cai","pee","re","ve","va","sal","dor","lin",
 	"do","pen","dao","da","ez","per","sa","ao","guz","to","pat","ria","noz","traz","ce",
