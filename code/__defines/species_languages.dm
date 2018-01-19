@@ -28,7 +28,7 @@
 // Languages.
 #define LANGUAGE_GALCOM "Galactic Common"
 #define LANGUAGE_EAL "Encoded Audio Language"
-#define LANGUAGE_SOL_COMMON "Sol Common"
+//#define LANGUAGE_SOL_COMMON "Sol Common"
 #define LANGUAGE_UNATHI "Sinta'unathi"
 #define LANGUAGE_SIIK_MAAS "Siik'maas"
 #define LANGUAGE_SIIK_TAJR "Siik'tajr"
@@ -39,7 +39,11 @@
 #define LANGUAGE_GUTTER "Gutter"
 #define LANGUAGE_CULT "Cult"
 #define LANGUAGE_SIGN "Sign Language"
-#define LANGUAGE_INDEPENDENT "Independent"
+//#define LANGUAGE_INDEPENDENT "Independent"
+#define LANGUAGE_ENGLISH "English"
+#define LANGUAGE_SLAVYA "Slavic"
+#define LANGUAGE_CHINESE "Chinese"
+#define LANGUAGE_AMERICO "South American"
 
 // Language flags.
 #define WHITELISTED  1   // Language is available if the speaker is whitelisted.
