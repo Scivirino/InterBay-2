@@ -108,6 +108,8 @@
 	supervisors = "CMA and your good will."
 	minimal_player_age = 41
 	economic_modifier = 10
+	total_positions = 1
+	spawn_positions = 1
 	ideal_character_age = 65
 	outfit_type = /decl/hierarchy/outfit/job/dreyfus/governor
 	social_class = SOCIAL_CLASS_MAX
@@ -224,7 +226,7 @@
 			access_chemistry, access_virology, access_cmo, access_surgery, access_maint_tunnels)
 
 /datum/job/hos
-	title = "Head Brigador"
+	title = "Chief Brigador"
 	supervisors = "the Governor"
 	department_flag = SEC
 	faction = "Station"
