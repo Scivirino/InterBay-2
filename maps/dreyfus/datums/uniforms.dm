@@ -1,5 +1,6 @@
-/decl/hierarchy/outfit/job/dreyfus/magistrate
-	name = OUTFIT_JOB_NAME("Magistrate")
+/decl/hierarchy/outfit/job/dreyfus/governor
+	name = OUTFIT_JOB_NAME("Governor")
+	head = /obj/item/clothing/head/caphat/formal
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/nt
 	suit = /obj/item/clothing/suit/leathercoat

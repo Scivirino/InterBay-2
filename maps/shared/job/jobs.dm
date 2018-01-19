@@ -20,7 +20,7 @@
 						///datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
-						/datum/job/supreme_arbiter						
+						/datum/job/supreme_arbiter
 						///datum/job/rd,
 						///datum/job/scientist,
 						///datum/job/raider,
@@ -49,7 +49,7 @@
 						///datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
-						/datum/job/supreme_arbiter						
+						/datum/job/supreme_arbiter
 						///datum/job/rd,
 						///datum/job/scientist,
 						///datum/job/raider,
@@ -64,22 +64,22 @@
 						/datum/job/hop,
 						/datum/job/doctor,
 						/datum/job/doctor/undertaker,
-						/datum/job/medassist,
+						///datum/job/medassist,
 						/datum/job/hos,
 						/datum/job/officer,
-						/datum/job/cadet,
+						///datum/job/cadet,
 						/datum/job/qm,
 						/datum/job/engineer,
-						/datum/job/jr_upkeep,
+						///datum/job/jr_upkeep,
 						/datum/job/cargo_tech,
 						/datum/job/cargo_tech/machinist,
 						/datum/job/mining,
-						/datum/job/ouvrier,
+						///datum/job/ouvrier,
 						/datum/job/chef,
 						///datum/job/chaplain,
 						/datum/job/janitor,
-						/datum/job/arbiter,
-						/datum/job/supreme_arbiter,						
+						///datum/job/arbiter,
+						///datum/job/supreme_arbiter,
 						/datum/job/rd,
 						/datum/job/scientist
 						///datum/job/raider,
@@ -90,7 +90,7 @@
 /datum/job/assistant
 	title = "Lackey"
 	supervisors = "Everyone"
-	minimal_player_age = 14
+	minimal_player_age = 18
 	economic_modifier = 1
 	ideal_character_age = 21
 	alt_titles = null
@@ -104,12 +104,12 @@
 
 
 /datum/job/captain
-	title = "Magistrate"
+	title = "Governor"
 	supervisors = "CMA and your good will."
 	minimal_player_age = 41
 	economic_modifier = 10
 	ideal_character_age = 65
-	outfit_type = /decl/hierarchy/outfit/job/dreyfus/magistrate
+	outfit_type = /decl/hierarchy/outfit/job/dreyfus/governor
 	social_class = SOCIAL_CLASS_MAX
 
 	equip(var/mob/living/carbon/human/H)
@@ -120,7 +120,7 @@
 
 /datum/job/hop
 	title = "Overseer"
-	supervisors = "the Magistrate"
+	supervisors = "the Governor"
 	minimal_player_age = 31
 	economic_modifier = 5
 	ideal_character_age = 45
@@ -152,7 +152,7 @@
 
 /datum/job/rd
 	title = "Technomancer"
-	supervisors = "the Magistrate"
+	supervisors = "the Governor"
 	minimal_player_age = 21
 	economic_modifier = 9
 	ideal_character_age = 40
@@ -224,8 +224,8 @@
 			access_chemistry, access_virology, access_cmo, access_surgery, access_maint_tunnels)
 
 /datum/job/hos
-	title = "Head Peacekeeper"
-	supervisors = "the Magistrate"
+	title = "Head Brigador"
+	supervisors = "the Governor"
 	department_flag = SEC
 	faction = "Station"
 	total_positions = 1
@@ -251,7 +251,7 @@
 
 
 /datum/job/officer
-	title = "Peacekeeper"
+	title = "Brigador"
 	department = "Security"
 	department_flag = SEC
 	faction = "Station"
@@ -284,7 +284,7 @@
 		H.add_stats(rand(8,12), rand(9,12), rand(7,10))
 
 /datum/job/engineer
-	title = "Upkeeper"
+	title = "Engineer"
 	supervisors = "the Overseer"
 	minimal_player_age = 16
 	economic_modifier = 3
@@ -368,7 +368,7 @@
 	selection_color = "#633d63"
 	title = "Medical Assistant"
 	supervisors = "the doctors"
-	minimal_player_age = 16
+	minimal_player_age = 18
 	economic_modifier = 2
 	ideal_character_age = 21
 	total_positions = 2
@@ -432,12 +432,12 @@
 		H.add_stats(rand(3,6), rand(12,16), rand(6,9))
 		H.add_skills(rand(30,50), rand(50,65), rand(25,60))
 		..()
-
+//End of kiddy roles.
 
 /datum/job/chef
 	title = "Cook"
 	supervisors = "the Overseer"
-	minimal_player_age = 16
+	minimal_player_age = 18
 	economic_modifier = 2
 	ideal_character_age = 21
 	total_positions = 2
@@ -447,6 +447,7 @@
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.add_stats(rand(7,12), rand(7,12), rand(10,15))
+
 
 /datum/job/chaplain
 	title = "Priest"
