@@ -154,6 +154,12 @@
 
 	var/obj/item/weapon/card/id/I = W.GetIdCard()
 
+
+
+	if (!anchored && !istype(W, /obj/item/weapon/wrench))
+		visible_message("<span class='warning'>You must secure it first!</span>")
+		return
+
 	if (currently_vending && vendor_account && !vendor_account.suspended)
 		var/paid = 0
 		var/handled = 0
@@ -210,6 +216,7 @@
 		nanomanager.update_uis(src)
 		return
 	else
+		..()
 		return attempt_to_stock(W, user)
 	..()
 	return
@@ -335,6 +342,10 @@
 	if(src.seconds_electrified != 0)
 		if(src.shock(user, 100))
 			return
+
+	if(!anchored)
+		visible_message("<span class='warning'>You must secure it first!</span>")
+		return
 
 	wires.Interact(user)
 	ui_interact(user)
